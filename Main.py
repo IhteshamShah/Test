@@ -19,20 +19,20 @@ import Sensitivity_Scalability_analysis as SSA
 #                          [30 31 32 33 34 35 ]        [35 36 37 38 39 40 41 ]        [40 41 42 43 44 45 46 47 ]
 #                                                       [42 43 44 45 46 47 48 ]        [48 49 50 51 52 53 54 55 ]
 #                                                                                      [56 57 58 59 60 61 62 63 ]
-'''
-GRID_SIZE = 5 
+
+GRID_SIZE = 6 
 
 # --- STEP 2: DEFINE TERRAIN STATES (indices) ---
-WATER = [12,13] # RIVER / HARD CONSTRAINTS
-GRASS = [3,7,14]
-ROCKS = [10,11,21]
+WATER = [12,17, 24,25] # RIVER / HARD CONSTRAINTS
+GRASS = [3,7,8,19]
+ROCKS = [6,11,20,21]
 '''
 # DEFINE TERRAIN STATES (indices) ---
 GRID_SIZE = 8
 WATER = [12,17,38, 42, 43] # RIVER / HARD CONSTRAINTS
 GRASS = [3,7,12,13,29, 32, 33, 19,39,49]
 ROCKS = [20, 6,11,21,25,26,32,40,51,52,53]
-
+'''
 # DEFINE DEMONSTRATION COUNTS ---
 N_DEMOS_EXPERT1 = 10
 N_DEMOS_EXPERT2 = 10

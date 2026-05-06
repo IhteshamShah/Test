@@ -1,4 +1,6 @@
 
+import os
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
@@ -47,6 +49,8 @@ class CustomizableFeatureMDP:
 # 3. Visualization Logic
 # ==========================================
 def plot_grid_setup(mdp, title, demos=None, resp=None, inf_c=None):
+    results_dir = "Results"
+    os.makedirs(results_dir, exist_ok=True)
     fig, ax = plt.subplots(figsize=(8, 8))
     ax.set_aspect('equal')
     
